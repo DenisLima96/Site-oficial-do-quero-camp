@@ -10,16 +10,30 @@ import { motion } from "framer-motion"
 import PremiumCard from "@/components/premium-card"
 import HeroBanner from "@/components/hero-banner"
 import ImageModal from "@/components/image-modal"
+<<<<<<< HEAD
 import LiveMatches from "@/components/live-matches"
 import { Search, Trophy, Medal, Award } from "lucide-react"
 
 export default function Home() {
   const startDate = new Date("2025-06-02T00:00:00")
 
+=======
+import { Search, Trophy, Medal, Award } from "lucide-react"
+
+export default function Home() {
+  // Data para início do campeonato (2 de julho de 2025)
+  const startDate = new Date("2025-07-02T00:00:00")
+
+  // Estado para controlar o modal de imagem
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [currentImage, setCurrentImage] = useState({ src: "", alt: "" })
   const [currentIndex, setCurrentIndex] = useState(0)
 
+<<<<<<< HEAD
+=======
+  // Dados das equipes campeãs
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
   const championTeams = [
     {
       id: 1,
@@ -47,11 +61,19 @@ export default function Home() {
     },
   ]
 
+<<<<<<< HEAD
+=======
+  // Imagens para o modal
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
   const teamImages = championTeams.map((team) => ({
     src: team.image,
     alt: team.alt,
   }))
 
+<<<<<<< HEAD
+=======
+  // Função para abrir o modal com a imagem selecionada
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
   const openImageModal = (src: string, alt: string, index: number) => {
     setCurrentImage({ src, alt })
     setCurrentIndex(index)
@@ -60,8 +82,15 @@ export default function Home() {
 
   return (
     <div>
+<<<<<<< HEAD
       <HeroBanner title="QUERIDO CAMP" subtitle="O maior campeonato de Counter-Strike 2 de Sergipe" />
 
+=======
+      {/* Hero Section */}
+      <HeroBanner title="QUERIDO CAMP" subtitle="O maior campeonato de Counter-Strike 2 de Sergipe" />
+
+      {/* CTA Buttons */}
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
       <section className="py-12 bg-black">
         <div className="container mx-auto px-4">
           <motion.div
@@ -86,6 +115,7 @@ export default function Home() {
         </div>
       </section>
 
+<<<<<<< HEAD
       {/* Live Matches Section */}
       <section className="py-12 bg-gradient-to-b from-black via-gray-900 to-black">
         <div className="container mx-auto px-4">
@@ -94,6 +124,9 @@ export default function Home() {
         </div>
       </section>
 
+=======
+      {/* Countdown Section */}
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
       <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black">
         <div className="container mx-auto px-4">
           <SectionTitle title="O Campeonato Começa Em" subtitle="Contagem Regressiva" />
@@ -115,6 +148,10 @@ export default function Home() {
         </div>
       </section>
 
+<<<<<<< HEAD
+=======
+      {/* About Section */}
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
@@ -134,11 +171,19 @@ export default function Home() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-gold mr-4 text-2xl">💸</span>
+<<<<<<< HEAD
                     <span className="text-lg">Inscrição: R$ 50</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-gold mr-4 text-2xl">📅</span>
                     <span className="text-lg">10/05 até 20/05</span>
+=======
+                    <span className="text-lg">Inscrição: R$ 50,00</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gold mr-4 text-2xl">📅</span>
+                    <span className="text-lg"> 10/06 Até 20/06</span>
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
                   </li>
                 </ul>
                 <p className="mt-8 text-white text-center font-bold text-xl">
@@ -150,6 +195,10 @@ export default function Home() {
         </div>
       </section>
 
+<<<<<<< HEAD
+=======
+      {/* Champions Section */}
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
       <section className="py-20 bg-gradient-to-b from-black to-gray-900">
         <div className="container mx-auto px-4">
           <SectionTitle
@@ -160,7 +209,11 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {championTeams.map((team, index) => (
+<<<<<<< HEAD
               <PremiumCard key={team.id} delay={index * 0.1} hoverEffect={false}>
+=======
+              <PremiumCard key={team.id} delay={index * 0.1}>
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
                 <div className="p-6 space-y-4">
                   <div className="flex items-center justify-between">
                     <div>
@@ -184,16 +237,22 @@ export default function Home() {
                   </div>
 
                   <div
+<<<<<<< HEAD
                     className="relative h-[300px] overflow-hidden rounded-lg border border-gold/10 transition-colors duration-300 cursor-pointer"
                     onClick={(e) => {
                       e.stopPropagation()
                       openImageModal(team.image, team.alt, index)
                     }}
+=======
+                    className="relative h-[300px] overflow-hidden rounded-lg border border-gold/10 group-hover:border-gold/30 transition-colors duration-300 cursor-pointer group"
+                    onClick={() => openImageModal(team.image, team.alt, index)}
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
                   >
                     <Image
                       src={team.image || "/placeholder.svg"}
                       alt={team.alt}
                       fill
+<<<<<<< HEAD
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 400px"
                     />
@@ -201,6 +260,16 @@ export default function Home() {
                     {/* Botão de visualização sempre visível */}
                     <div className="absolute bottom-4 right-4 bg-gold/80 text-black p-2 rounded-full shadow-lg">
                       <Search size={20} />
+=======
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+
+                    {/* Overlay with zoom icon */}
+                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <div className="bg-gold/80 text-black p-3 rounded-full">
+                        <Search size={24} />
+                      </div>
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
                     </div>
                   </div>
 
@@ -221,6 +290,10 @@ export default function Home() {
         </div>
       </section>
 
+<<<<<<< HEAD
+=======
+      {/* Prize Section */}
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <SectionTitle
@@ -287,6 +360,10 @@ export default function Home() {
         </div>
       </section>
 
+<<<<<<< HEAD
+=======
+      {/* Registration Section */}
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
       <section id="inscricao" className="py-20 bg-gradient-to-b from-gray-900 to-black">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
@@ -298,8 +375,13 @@ export default function Home() {
               transition={{ duration: 0.5 }}
               className="text-white text-lg mb-8"
             >
+<<<<<<< HEAD
               As inscrições estão abertas de 10/05 até 20/05. Não perca a oportunidade de participar do maior campeonato
               de CS2 de Sergipe!
+=======
+              As inscrições estão abertas até 20/06. Não perca a oportunidade de participar do maior campeonato de CS2
+              de Sergipe!
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
             </motion.p>
             <motion.a
               initial={{ opacity: 0, y: 20 }}
@@ -317,8 +399,15 @@ export default function Home() {
         </div>
       </section>
 
+<<<<<<< HEAD
       <SponsorsSection />
 
+=======
+      {/* Sponsors Section */}
+      <SponsorsSection />
+
+      {/* Image Modal */}
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
       <ImageModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

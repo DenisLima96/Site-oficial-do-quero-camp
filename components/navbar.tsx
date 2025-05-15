@@ -6,7 +6,10 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X, Trophy } from "lucide-react"
 import { motion } from "framer-motion"
+<<<<<<< HEAD
 import AuthButton from "./auth-button"
+=======
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -47,13 +50,20 @@ const Navbar = () => {
             <span className="text-gold font-bold text-xl hidden sm:inline">QUERIDO CAMP</span>
           </Link>
 
+<<<<<<< HEAD
           <div className="hidden md:flex space-x-8 items-center">
             <NavLink href="/">Home</NavLink>
             <NavLink href="/partidas">Partidas</NavLink>
+=======
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex space-x-8">
+            <NavLink href="/">Home</NavLink>
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
             <NavLink href="/galeria">Galeria</NavLink>
             <NavLink href="/regras">Regras</NavLink>
             <NavLink href="/campeonato">Campeonato</NavLink>
             <NavLink href="/premiacao">Premiação</NavLink>
+<<<<<<< HEAD
             <AuthButton />
           </div>
 
@@ -65,14 +75,28 @@ const Navbar = () => {
           </div>
         </div>
 
+=======
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button className="md:hidden text-gold" onClick={toggleMenu}>
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
         {isMenuOpen && (
           <div className="md:hidden py-4 space-y-3 mt-4 bg-black/90 backdrop-blur-md rounded-lg border border-gold/10 p-4">
             <MobileNavLink href="/" onClick={toggleMenu}>
               Home
             </MobileNavLink>
+<<<<<<< HEAD
             <MobileNavLink href="/partidas" onClick={toggleMenu}>
               Partidas
             </MobileNavLink>
+=======
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
             <MobileNavLink href="/galeria" onClick={toggleMenu}>
               Galeria
             </MobileNavLink>

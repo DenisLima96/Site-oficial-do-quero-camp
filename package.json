@@ -47,11 +47,19 @@
     "framer-motion": "latest",
     "input-otp": "1.4.1",
     "lucide-react": "^0.454.0",
+<<<<<<< HEAD
     "next": "^15.2.4",
     "next-themes": "^0.4.4",
     "react": "^19.1.0",
     "react-day-picker": "8.10.1",
     "react-dom": "^19.1.0",
+=======
+    "next": "15.2.4",
+    "next-themes": "^0.4.4",
+    "react": "^19",
+    "react-day-picker": "8.10.1",
+    "react-dom": "^19",
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
     "react-hook-form": "^7.54.1",
     "react-resizable-panels": "^2.1.7",
     "recharts": "2.15.0",
@@ -69,4 +77,8 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e

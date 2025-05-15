@@ -155,6 +155,7 @@ export default function Campeonato() {
           </motion.h2>
           <div className="max-w-3xl mx-auto">
             <div className="relative border-l-2 border-gold pl-8 space-y-10">
+<<<<<<< HEAD
               <TimelineItem date="10 a 20 de Maio" title="Inscrições">
                 Período de inscrições para equipes e jogadores individuais.
               </TimelineItem>
@@ -171,6 +172,22 @@ export default function Campeonato() {
                 Confrontos entre os 4 times restantes.
               </TimelineItem>
               <TimelineItem date="26 e 27 de Julho" title="Finais Presenciais">
+=======
+              <TimelineItem date="10/06 Até 20/06" title="Inscrições">
+                Período de inscrições para equipes e jogadores individuais.
+              </TimelineItem>
+              <TimelineItem date=" 02/06" title="Início do Campeonato">
+                Cerimônia de abertura e primeiras partidas da fase de grupos.
+              </TimelineItem>
+              <TimelineItem date="02/06 a 22/07" title="Fase de Grupos">
+                Partidas da fase de grupos, com jogos de ida e volta.
+              </TimelineItem>
+              <TimelineItem date="22/07 a 25/07" title="Quartas de Final">
+                Confrontos eliminatórios entre os 8 melhores times.
+              </TimelineItem>
+              
+              <TimelineItem date="26/07 a 27/07" title="Semifinais e Finais Presenciais">
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
                 Grande final presencial em LAN e cerimônia de premiação.
               </TimelineItem>
             </div>

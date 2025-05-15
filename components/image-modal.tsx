@@ -107,7 +107,10 @@ const ImageModal = ({ isOpen, onClose, imageSrc, imageAlt, images, currentIndex 
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 80vw"
                   priority
+<<<<<<< HEAD
                   onClick={(e) => e.stopPropagation()}
+=======
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
                 />
               </div>
             </div>

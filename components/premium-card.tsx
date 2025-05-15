@@ -22,9 +22,13 @@ const PremiumCard = ({ children, className = "", delay = 0, hoverEffect = true }
       } bg-gradient-to-br from-black via-gray-900 to-black p-[1px] rounded-lg overflow-hidden ${className}`}
     >
       <div className="absolute inset-0 bg-gradient-to-br from-gold/30 via-transparent to-gold/30 opacity-20 rounded-lg"></div>
+<<<<<<< HEAD
       {hoverEffect && (
         <div className="absolute inset-0 bg-gradient-to-br from-gold/20 via-transparent to-gold/20 opacity-0 group-hover:opacity-30 transition-opacity duration-500 rounded-lg"></div>
       )}
+=======
+      <div className="absolute inset-0 bg-gradient-to-br from-gold/20 via-transparent to-gold/20 opacity-0 group-hover:opacity-30 transition-opacity duration-500 rounded-lg"></div>
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
 
       <div className="relative bg-black rounded-lg overflow-hidden h-full">{children}</div>
 

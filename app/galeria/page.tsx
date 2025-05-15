@@ -82,7 +82,11 @@ export default function Galeria() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
             {teamShowcases.map((team, index) => (
+<<<<<<< HEAD
               <PremiumCard key={team.id} delay={index * 0.1} hoverEffect={false}>
+=======
+              <PremiumCard key={team.id} delay={index * 0.1}>
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
                 <div className="p-6 space-y-6">
                   <div className="flex items-center justify-between">
                     <motion.div
@@ -121,16 +125,22 @@ export default function Galeria() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.1 + 0.4 }}
+<<<<<<< HEAD
                     className="relative h-[300px] overflow-hidden rounded-lg border border-gold/10 transition-colors duration-300 cursor-pointer"
                     onClick={(e) => {
                       e.stopPropagation()
                       openImageModal(team.image, `Equipe ${team.teamName}`, index)
                     }}
+=======
+                    className="relative h-[300px] overflow-hidden rounded-lg border border-gold/10 group-hover:border-gold/30 transition-colors duration-300 cursor-pointer group"
+                    onClick={() => openImageModal(team.image, `Equipe ${team.teamName}`, index)}
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
                   >
                     <Image
                       src={team.image || "/placeholder.svg"}
                       alt={`Equipe ${team.teamName}`}
                       fill
+<<<<<<< HEAD
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
@@ -138,6 +148,16 @@ export default function Galeria() {
                     {/* Botão de visualização sempre visível */}
                     <div className="absolute bottom-4 right-4 bg-gold/80 text-black p-2 rounded-full shadow-lg">
                       <Search size={20} />
+=======
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+
+                    {/* Overlay with zoom icon */}
+                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <div className="bg-gold/80 text-black p-3 rounded-full">
+                        <Search size={24} />
+                      </div>
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
                     </div>
                   </motion.div>
 
@@ -170,8 +190,12 @@ export default function Galeria() {
               >
                 <h2 className="text-3xl font-bold text-gold mb-6">Quer fazer parte da próxima galeria?</h2>
                 <p className="text-white mb-8 max-w-2xl mx-auto text-lg">
+<<<<<<< HEAD
                   Inscrições de 10/05 até 20/05. Inscreva-se no Querido Camp e tenha a chance de entrar para a história
                   do campeonato!
+=======
+                  Inscreva-se no Querido Camp e tenha a chance de entrar para a história do campeonato!
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
                 </p>
                 <a
                   href="https://forms.gle/FHyvA4vJ5JfZ4ezU9"

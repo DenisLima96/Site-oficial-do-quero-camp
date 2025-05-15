@@ -47,12 +47,21 @@ const SponsorsSection = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-6 items-center mt-12">
           {sponsors.map((sponsor, index) => (
+<<<<<<< HEAD
             <PremiumCard key={sponsor.id} delay={index * 0.1} hoverEffect={true}>
               <div
                 className="p-6 flex items-center justify-center h-32 cursor-pointer"
                 onClick={() => openSponsorModal(sponsor.logo, sponsor.name, index)}
               >
                 <div className="relative w-full h-full flex items-center justify-center group">
+=======
+            <PremiumCard key={sponsor.id} delay={index * 0.1}>
+              <div
+                className="p-6 flex items-center justify-center h-32 cursor-pointer group"
+                onClick={() => openSponsorModal(sponsor.logo, sponsor.name, index)}
+              >
+                <div className="relative w-full h-full flex items-center justify-center">
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
                   <Image
                     src={sponsor.logo || "/placeholder.svg"}
                     alt={sponsor.name}
@@ -72,7 +81,11 @@ const SponsorsSection = () => {
         </div>
 
         <div className="mt-16 text-center">
+<<<<<<< HEAD
           <PremiumCard hoverEffect={true}>
+=======
+          <PremiumCard hoverEffect={false}>
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
             <div className="p-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

@@ -176,8 +176,13 @@ export default function Premiacao() {
               >
                 <h2 className="text-2xl font-bold text-gold mb-6">Quer fazer parte disso?</h2>
                 <p className="text-white mb-8 max-w-2xl mx-auto">
+<<<<<<< HEAD
                   Inscrições de 10/05 até 20/05. Não perca a oportunidade de competir pelo prêmio e reconhecimento no
                   maior campeonato de CS2 de Sergipe!
+=======
+                  Não perca a oportunidade de competir pelo prêmio e reconhecimento no maior campeonato de CS2 de
+                  Sergipe!
+>>>>>>> 17ad165dcc4eef6860c693943b96026fa6f78a5e
                 </p>
                 <a
                   href="https://forms.gle/FHyvA4vJ5JfZ4ezU9"
